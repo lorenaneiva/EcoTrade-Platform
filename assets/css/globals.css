@@ -2,12 +2,13 @@
 NO HTML => para a ADLaM display
 <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 */
-
-
+* {
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
     font-family: "ADLaM Display", Arial, Helvetica, sans-serif;
 }
 
@@ -31,4 +32,37 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
+}
+@media (max-width: 520px){
+    body{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "ADLaM Display", Arial, Helvetica, sans-serif;
+    }
+    nav{
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+    }
+    .brand{
+        font-size: 60px;
+    }
+    nav ul{
+        margin: 0;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 20px;
+        gap: 10px;
+    }
+    nav li {
+        margin: 0;
+        padding: 7px;
+        transition: 0.2s;
+        border-radius: 50px;
+    }
+    nav li:hover{
+        background-color: #1b363c9d;
+    }
 }

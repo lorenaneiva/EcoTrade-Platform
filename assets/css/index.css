@@ -111,8 +111,28 @@
     font-size: 20px;
 }
 
-
 @keyframes spin {
     from {translate: 0;}
     to {translate: -100%;}
+}
+
+@media (max-width: 768px){
+    .title{
+        font-size: 35px;
+        width: 400px;
+    }
+    .maincontent{
+        height: 450px;
+    }
+    .register{
+        width: 200px;
+        height: 70px;
+    }
+
+    .carousel{
+        width: 100%;
+    }
+    .smokyLeft, .smokyRight{
+        width: 200px;
+    }
 }
