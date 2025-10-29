@@ -1,0 +1,173 @@
+:root {
+    --teal: #0da4c6;
+    --teal-dark: #0086a3;
+    --light: #9fe6ef;
+    --card-bg: #ffffff;
+    --button: #a9e6ef;
+    --text: #111;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    height: 100%;
+    background: var(--light);
+    color: var(--text);
+}
+
+
+.topbar {
+    background: var(--teal-dark);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile .material-icons {
+    color: var(--teal-dark);
+    font-size: 22px;
+}
+
+
+.content {
+    max-width: 500px;
+    margin: 40px auto;
+    background: var(--card-bg);
+    padding: 40px 48px 60px;
+    border-radius: 6px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+
+
+label {
+    display: block;
+    font-size: 13px;
+    color: #5b5b5b;
+    margin-top: 14px;
+}
+
+.input-line {
+    border-bottom: 2px solid #111;
+    margin-top: 6px;
+    padding-bottom: 6px;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px 0;
+    font-size: 14px;
+    color: var(--text);
+}
+
+
+.select-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.select-wrap .chevron {
+    margin-left: auto;
+    pointer-events: none;
+    font-weight: 700;
+    color: var(--text);
+}
+
+
+.file-row {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.file-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--light);
+    transition: background 0.3s;
+}
+
+.file-label:hover {
+    background: var(--teal);
+}
+
+.file-label .material-icons {
+    color: #111;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-name {
+    margin-left: 12px;
+    font-size: 13px;
+    color: #444;
+}
+
+.submit-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.btn-send {
+    background: var(--button);
+    border: none;
+    padding: 14px 44px;
+    border-radius: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+    transition: background 0.3s;
+}
+
+.btn-send:hover {
+    background: var(--teal);
+    color: #fff;
+}
+
+
+@media (max-width: 600px) {
+    .content {
+        margin: 20px;
+        padding: 28px 20px;
+    }
+}
