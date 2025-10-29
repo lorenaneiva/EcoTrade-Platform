@@ -1,31 +1,116 @@
+.first{
+    background-image: url("../img/florest-home-image.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+.maincontent{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+.title{
+    text-shadow: 0 0 10px #1b363c;
+    width: 500px;
+}
+
+.register{
+    font-size: larger;
+    border: none;
+    width: 250px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #48CAE4;
+    transition: 0.1s;
+    box-shadow: 0px 3px 10px #1b363c;
+}
+
+.register:hover{
+    background-color: #46b5cb;
+    cursor: pointer;
+}
+
+.register:active{
+    transform: translateY(2px);
+    background-color: #379fb4;
+    box-shadow: none;
+}
+
+.register a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-smoky{
+    position: relative;
+}
+
+.smokyLeft{
+    height: 500px;
+    width: 500px;
+    background-image: linear-gradient(to right, #ffffff, #ffffff00);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.smokyRight{
+    height: 500px;
+    width: 300px;
+    background-image: linear-gradient(to left, #ffffff, #ffffff00);
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
 .carousel{
+    position: relative;
     margin:100px auto;
-    width: 90%;
-    border: 5px solid red;
+    width: 95%;
     display: flex;
     overflow-x: auto;
+    padding: 20px;
 }
+
 .carousel::-webkit-scrollbar{
     display: none;
 }
+
 .group{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
-    animation: spin 25s infinite linear;
-    padding-right: 16px;
+    gap: 25px;
+    animation: spin 40s infinite linear;
+    padding-right: 25px;
 }
+
 .card {
     flex: 0 0 170px;
-    height: 170px;
+    height: 250px;
     padding: 16px;
-    background-color: cornflowerblue;
-    font-size: 30px;
+    background-color: #ffffff;
+    font-size: 11px;
     border-radius: 6px;
     text-align: center;
     align-content: center;
+    box-shadow: 0 0 10px  #1b363c7c;
 }
+.card img{
+    width: auto;
+    height: 100px;
+}
+.card h2{
+    font-size: 20px;
+}
+
 
 @keyframes spin {
     from {translate: 0;}
