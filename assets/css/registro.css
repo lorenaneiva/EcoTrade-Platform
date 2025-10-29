@@ -31,7 +31,7 @@ html, body {
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.5px;
-    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
 .profile {
@@ -42,7 +42,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 .profile .material-icons {
@@ -91,7 +90,6 @@ input[type="text"], input[type="date"], select {
     color: var(--text);
 }
 
-
 .select-wrap {
     display: flex;
     align-items: center;
@@ -104,7 +102,6 @@ input[type="text"], input[type="date"], select {
     font-weight: 700;
     color: var(--text);
 }
-
 
 .file-row {
     display: flex;
@@ -121,11 +118,12 @@ input[type="text"], input[type="date"], select {
     height: 36px;
     border-radius: 50%;
     background: var(--light);
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .file-label:hover {
     background: var(--teal);
+    transform: scale(1.05);
 }
 
 .file-label .material-icons {
@@ -140,7 +138,12 @@ input[type="file"] {
     margin-left: 12px;
     font-size: 13px;
     color: #444;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
 
 .submit-wrap {
     display: flex;
@@ -156,18 +159,38 @@ input[type="file"] {
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 2px 0 rgba(0,0,0,0.06);
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .btn-send:hover {
     background: var(--teal);
     color: #fff;
+    transform: scale(1.05);
+}
+
+.btn-send:active {
+    transform: scale(0.97);
+}
+
+
+#success-message {
+    display: none;
+    text-align: center;
+    color: #0f8a3b;
+    margin-top: 24px;
+    font-weight: 600;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 
 @media (max-width: 600px) {
     .content {
-        margin: 20px;
-        padding: 28px 20px;
+    margin: 20px;
+    padding: 28px 20px;
     }
 }
