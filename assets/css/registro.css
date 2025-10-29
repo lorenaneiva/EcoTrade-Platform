@@ -172,16 +172,6 @@ input[type="file"] {
     transform: scale(0.97);
 }
 
-
-#success-message {
-    display: none;
-    text-align: center;
-    color: #0f8a3b;
-    margin-top: 24px;
-    font-weight: 600;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
