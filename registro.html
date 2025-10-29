@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrade — Registro de Créditos de Carbono</title>
+    <link rel="stylesheet" href="assets/css/registro.css">
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">EcoTrade</div>
+        <div class="profile">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zM4 20.5c0-3.313 4.03-6 8-6s8 2.687 8 6v.5H4v-.5z" fill="#0b93b0"/></svg>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1>Registro de Créditos de Carbono</h1>
+
+        <form class="form">
+            <label>Insira quantos créditos deseja depositar:</label>
+            <div class="input-line">
+                <input type="text" placeholder="Ex.: 150">
+            </div>
+
+            <label>Origem: (escolha uma das opções abaixo)</label>
+            <div class="input-line select-wrap">
+                <select>
+                    <option>Escolha...</option>
+                    <option>Florestamento</option>
+                    <option>Reciclagem</option>
+                    <option>Energia renovável</option>
+                </select>
+                <span class="chevron">▾</span>
+            </div>
+
+            <label>Data de Geração:</label>
+            <div class="input-line">
+                <input type="date">
+            </div>
+
+            <label>Documento da confirmação da ação:</label>
+            <div class="file-row">
+                <label for="file-upload" class="file-label">
+                    <span class="material-icons">attach_file</span>
+                </label>
+                <input id="file-upload" type="file">
+                <span class="file-name">Nenhum arquivo escolhido</span>
+            </div>
+
+            <div class="submit-wrap">
+                <button class="btn-send">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
