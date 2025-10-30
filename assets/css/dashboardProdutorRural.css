@@ -5,7 +5,7 @@
 }
 
 .btn {
-    background-color: #ffffff00;
+    background-color: #d7f0f4;
     border: 1px solid #1b363c7c;
     padding: 20px;
     border-radius: 6px;
@@ -24,6 +24,7 @@
 }
 
 .chart{
+    background-color: white;
     height: auto;
     width: auto;
     border: 1px solid #1b363c7c;
@@ -54,6 +55,7 @@
 
 .lines{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .line{
@@ -61,6 +63,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    cursor: pointer;
 } 
 
 .general-container-gs{
