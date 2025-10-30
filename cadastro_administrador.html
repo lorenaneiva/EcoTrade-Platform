@@ -4,53 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/globals.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/cadastro_administrador.css">
+        <link rel="stylesheet" href="assets/css/globals.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <section class="first">
         <header>
             <nav class="navbar">
-            <a href="index.html" class="brand"> EcoTrade</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dashboardProdutorRural.html">DashBoard</a></li>
-                <li><a href="login.html">Entrar</a></li>
-                <li><a href="registro_escolher.html">Registrar</a></li>
-            </ul>
-        </nav>
+                <a href="index.html" class="brand"> EcoTrade</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="registro_escolher.html">Registrar</a></li>
+                </ul>
+            </nav>
         </header>
 
-    <section class="container-login">
+    <section class="container-cadastro-administrador">
 
-                <div class="formulario">
-                    <h2>Login </h2>
-
-                <form onsubmit="autenticarUsuario(); return false;">
-                    
-                    <label for="floatingInput">Email </label>
-                    <input type="email" class="form-control" id="email" placeholder="usuario@gmail.com">
+            <div class="conteudo-formulario">
                 
+                <div class="formulario">
+                    <h2>Insira seus dados </h2>
+                    <label for="floatingInput">Email </label>
+                    <input type="email" class="form-control" id="floatingInput" placeholder="usuario@gmail.com">
             
                     <label for="floatingPassword">Senha</label>
-                    <input type="password" class="form-control" id="senha" placeholder="Senha">
-                    
-                    <div class="lembrar-senha">
-                        <input type="checkbox" id="lembrar">
-                        <label for="lembrar">Lembrar senha</label>
-                    </div>
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
 
-                    <button type="submit" id="botao">Entrar</button>
-                    <a href="esquecer_senha.html" class="botao" >esqueci minha senha</a>
-
-                </form>    
-
+                    <label for="floatingInput">Confirmar senha</label>
+                    <input type="password" class="form-control" id="floatingInput" placeholder="Comfirmar senha">
+                
+                    <label for="floatingPassword">CPF</label>
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="000.000.000-00">
+                
+                    <button type="submit" id="botao">Comfirmar</button>
                 </div>
 
+            </div>
+        
     </section>
 </section>
 
@@ -87,7 +82,6 @@
     </div>
     </footer>
 
-<script src="assets/js/login.js"></script>
 
 </body>
 </html>
