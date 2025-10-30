@@ -213,6 +213,9 @@ nav a {
 .card h2{
     font-size: 25px;
 }
+.card p{
+    font-size: 17px;
+}
 
 @keyframes spin {
     from {translate: 0;}
