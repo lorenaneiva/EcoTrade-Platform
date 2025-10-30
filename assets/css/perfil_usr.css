@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "ADLaM Display", Arial, Helvetica, sans-serif;
+    background-color: #e8f8f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --color-blue: #008cba;
+    --color-light-blue: #3498db;
+    --color-dark-gray: #25646F; 
+    --color-medium-gray: #666;
+    --color-text-light: #fff;
+}
+
+nav {
+    display: flex;
+    padding: 5px 65px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    background-color: var(--color-blue);
+    position: relative;
+}
+
+.brand {
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    left: 65px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+nav li {
+    list-style: none;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "ADLaM Display", Arial, Helvetica, sans-serif;
+    transition: color 0.3s ease; 
+}
+
+nav li:hover {
+    transform: translateY(-3px);
+}
+
+nav li:hover a {
+    color: #e0f7ff;
+}
+
+.logout-button {
+    position: absolute;
+    right: 65px;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 20px;
+}
+
+.wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: var(--color-light-blue);
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    z-index: 1;
+}
+
+.profile-header {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar i {
+    font-size: 60px;
+    color: #444;
+}
+
+.profile-name-box {
+    background-color: var(--color-light-blue);
+    color: var(--color-text-light);
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px 40px;
+}
+
+.card {
+    flex: 1;
+    background-color: var(--color-dark-gray);
+    color: var(--color-text-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-light-blue);
+    font-size: 1.1em;
+}
+
+.personal-data-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-item {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--color-medium-gray);
+}
+
+.data-item:last-of-type {
+    border-bottom: none;
+}
+
+.data-item label {
+    font-weight: bold;
+    color: #ccc;
+    margin-right: 5px;
+}
+
+.data-value {
+    font-style: italic;
+}
+
+.action-button {
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--color-light-blue);
+    color: var(--color-text-light);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+    display: block;
+}
+
+.action-button:hover {
+    background-color: #2980b9;
+}
+
+.transaction-history-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.transaction-item i {
+    font-size: 1.5em;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.transaction-amount {
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.transaction-negative {
+    color: #e74c3c;
+}
+
+.view-all-transactions {
+    margin-top: auto;
+    text-align: center;
+    color: var(--color-light-blue);
+    text-decoration: none;
+    padding: 10px 0;
+    border-top: 1px solid var(--color-medium-gray);
+    transition: color 0.3s;
+}
+
+.view-all-transactions:hover {
+    color: #2980b9;
+}
+
+#history-extended {
+    display: none;
+    flex-direction: column;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    background-color: #1b363c; 
+    color: white; 
+    padding: 40px 5%;
+    margin-top: 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.footer-column {
+    width: 20%;
+    min-width: 100px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #9eb1b6; 
+    padding-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #61b2c3; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .brand {
+        position: static;
+        order: 1;
+    }
+    
+    nav ul {
+        order: 2;
+        margin: 10px 0;
+    }
+    
+    .logout-button {
+        position: static;
+        order: 3;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-header {
+        padding-top: 30px;
+    }
+    
+    .profile-name-box {
+        padding: 8px 20px;
+    }
+    
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
