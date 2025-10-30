@@ -1,18 +1,18 @@
 window.sr = ScrollReveal({reset : true });
 
-sr.reveal('.maincontent', {
+sr.reveal('.chart', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })
-sr.reveal('.carousel', {
+sr.reveal('.content', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })
-sr.reveal('.titlesecond', {
+sr.reveal('.card', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })
-sr.reveal('.footer-content', {
+sr.reveal('.cards-container', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })

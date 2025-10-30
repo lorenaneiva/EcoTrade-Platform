@@ -55,6 +55,7 @@
 
 .lines{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -89,7 +90,4 @@
     background-color: rgb(251, 190, 78);
     width: 30px;
 }
-
-
-
 
