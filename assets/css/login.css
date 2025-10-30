@@ -8,28 +8,12 @@
     height: 100vh;
 }
 
-.imagem-lateral img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.navbar{
-    background-color: #0096C7;
-}
-
 .container-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-    padding: 40px;
     background-color: white;
-    height: 100vh;
+    height: 700px;
 }
 
 .conteudo-formulario{
@@ -49,7 +33,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0 0 10px  #1b363c7c;
     width: 350px;
 }
 
@@ -79,7 +63,7 @@
 
 .form-control{
     border-radius: 5px;
-    background-color: #CAF0F8;
+    background-color: transparent;
     color: black;
 }
 
@@ -93,6 +77,22 @@ label{
     color: black;
     font-family: Helvetica;
     font-size: 15px;
+}
+
+.lembrar-senha {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: Helvetica;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.lembrar-senha input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    accent-color: #0077cc; 
 }
 
 #botao{
@@ -113,27 +113,26 @@ label{
 
 
 .botao {
-    padding: 10px 20px;
-    margin-left: 60px;
-    font-size: 10px;
+    display: block;
+    padding: 5px ;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 150px;
+    font-size: 11px;
     border: none;
-    background-color: #CAF0F8;
+    background-color: none;
     color: rgba(0, 0, 0, 0.349);
-    border-radius: 30px;
     transition: 0.1s;
     cursor: pointer;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
     text-decoration: none;
 }
 
 .botao:hover{
-    background-color: #46b5cb;
     cursor: pointer;
 }
 
 .botao:active{
     transform: translateY(2px);
-    background-color: #379fb4;
     box-shadow: none;
 }    
 
@@ -156,4 +155,56 @@ label{
     flex-direction: column;
     gap: 10px;
   }
+
+.footer {
+    background-color: #1b363c;
+    color: white; 
+    padding: 40px 5%;
+    margin-top: 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.footer-column {
+    width: 20%;
+    min-width: 100px;
+
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #9eb1b6; 
+    padding-bottom: 10px;
+
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #61b2c3; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
 }

@@ -8,12 +8,6 @@
     height: 100vh;
 }
 
-.imagem-lateral img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
 .navbar{
     background-color: #0096C7;
 }
@@ -49,7 +43,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0 0 10px  #1b363c7c;
     width: 350px;
 }
 
@@ -68,18 +62,10 @@
     border: 1px solid #ccc;
 }
 
-.formulario button {
-    padding: 10px 20px;
-    background-color: #00BFFF;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 .form-control{
     border-radius: 5px;
-    background-color: #CAF0F8;
+    background-color: transparent;
     color: black;
 }
 
@@ -95,30 +81,18 @@ label{
     font-size: 15px;
 }
 
-#botao{
-    color: white;
-    border-radius: 10px;
-}
-
-#botao:hover{
-    background-color: #46b5cb;
-    cursor: pointer;
-}
-
-#botao:active{
-    transform: translateY(2px);
-    background-color: #379fb4;
-    box-shadow: none;
-}
 
 
 .botao {
     padding: 10px 20px;
-    margin-left: 60px;
-    font-size: 10px;
+    margin-left: 0px;
+    margin-right: 190px;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: flex;
     border: none;
-    background-color: #CAF0F8;
-    color: rgba(0, 0, 0, 0.349);
+    background-color: #00BFFF;
+    color: white;
     border-radius: 30px;
     transition: 0.1s;
     cursor: pointer;
@@ -140,6 +114,57 @@ label{
 .botao a{
     color: black;
     text-decoration: none;
+}
+
+.footer {
+    background-color: #1b363c;
+    color: white; 
+    padding: 40px 5%;
+    margin-top: 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.footer-column {
+    width: 20%;
+    min-width: 100px;
+
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #9eb1b6; 
+    padding-bottom: 10px;
+
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #61b2c3; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,4 @@
 window.sr = ScrollReveal({reset : true });
-
 sr.reveal('.maincontent', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
