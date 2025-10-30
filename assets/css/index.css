@@ -251,6 +251,11 @@ nav a {
     font-size: 16px;
 }
 
+.maincontent, .carousel, .footer-content{
+    visibility: hidden;
+}
+
+
 @media (max-width: 520px){
     body{
         font-size: 25px;
