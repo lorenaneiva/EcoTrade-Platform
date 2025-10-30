@@ -118,7 +118,7 @@ input[type="text"], input[type="date"], select {
     height: 36px;
     border-radius: 50%;
     background: var(--light);
-    transition: background 0.3s, transform 0.2s;
+    transition: 0.3s, transform 0.2s;
 }
 
 .file-label:hover {
@@ -159,7 +159,7 @@ input[type="file"] {
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 2px 0 rgba(0,0,0,0.06);
-    transition: background 0.3s, transform 0.2s;
+    transition: 0.3s, transform 0.2s;
 }
 
 .btn-send:hover {
