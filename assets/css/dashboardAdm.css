@@ -96,7 +96,3 @@
     background-color: rgb(251, 190, 78);
     width: 30px;
 }
-
-.chart, .content, .card{
-    visibility: hidden;
-}
