@@ -1,0 +1,91 @@
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: #ffffff00;
+    border: 1px solid #1b363c7c;
+    padding: 20px;
+    border-radius: 6px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    text-decoration: none;
+    color: #1b363c;
+}
+
+.btn:hover{
+    background-color: #1b363c;
+    color: white;
+}
+
+.chart{
+    height: auto;
+    width: auto;
+    border: 1px solid #1b363c7c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+.graph-horizontal-line{
+    position: absolute;
+    bottom: 62px;
+    border: 1px solid #1b363c5f;
+    width: 90%;
+}
+
+.months{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.months h3{
+    margin: 0;
+}
+
+.lines{
+    display: flex;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.general-container-gs{
+    display: flex;
+    gap: 5px;
+    margin: 20px;
+}
+
+.containers-gs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generated{
+    height: 100px;
+    background-color: blue;
+    width: 30px;
+}
+
+.sold {
+    height: 100px;
+    background-color: orange;
+    width: 30px;
+}
+
+
