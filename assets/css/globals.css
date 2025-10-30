@@ -19,6 +19,7 @@ nav{
     height: 64px;
     font-weight: 800;
 }
+
 .brand {
     font-size: 35px;
 }
@@ -29,6 +30,34 @@ nav ul {
 nav li {
     list-style: none;
 }
+
+nav li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff; 
+  transition: color 200ms ease;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 0%;
+  height: 2px; 
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+nav li a:hover{
+    color: #46c3df9d;
+}
+
+nav li a:hover::after {
+  width: 100%;
+  color: #46c3df9d;
+}
+
 nav a {
     text-decoration: none;
     color: white;
@@ -115,6 +144,6 @@ nav a {
         border-radius: 50px;
     }
     nav li:hover{
-        background-color: #1b363c9d;
+        background-color: #46c3df9d;
     }
 }
