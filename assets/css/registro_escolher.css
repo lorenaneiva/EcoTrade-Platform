@@ -16,10 +16,6 @@
     justify-content: center;
 }
 
-.navbar{
-    background-color: #0096C7;
-}
-
 h1{
     color: black;
     font-family: ADLaM Display;
@@ -32,8 +28,6 @@ button{
     height: 50px;
     font-family: Helvetica;
 }
-
-
 
 .container-login{
     display: flex;
@@ -79,7 +73,7 @@ button{
   border-radius: 30px;
   transition: 0.1s;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 6px  #1b363c7c;
 }
 
 .botao-link:hover{
@@ -112,4 +106,56 @@ button{
     flex-direction: column;
     gap: 10px;
   }
+  
+.footer {
+    background-color: #1b363c;
+    color: white; 
+    padding: 40px 5%;
+    margin-top: 0; 
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.footer-column {
+    width: 20%;
+    min-width: 100px;
+
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #9eb1b6; 
+    padding-bottom: 10px;
+
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #61b2c3; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+  }
