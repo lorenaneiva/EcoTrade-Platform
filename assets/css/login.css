@@ -8,19 +8,12 @@
     height: 100vh;
 }
 
-
 .container-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-    padding: 40px;
     background-color: white;
-    height: 100vh;
+    height: 700px;
 }
 
 .conteudo-formulario{
