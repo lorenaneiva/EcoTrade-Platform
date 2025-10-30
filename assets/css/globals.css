@@ -1,7 +1,4 @@
-/*
-NO HTML => para a ADLaM display
-<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
-*/
+
 * {
     box-sizing: border-box;
 }
@@ -9,16 +6,18 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "ADLaM Display", Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 nav{
     background-color: #1b363c;
     display: flex;
-    padding: 5px 65px;
+    padding: 9px 65px;
     justify-content: space-between;
     align-items: center;
-
+    border-bottom: 1px solid white;
+    height: 64px;
+    font-weight: 800;
 }
 .brand {
     font-size: 35px;

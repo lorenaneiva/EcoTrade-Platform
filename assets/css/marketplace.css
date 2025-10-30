@@ -16,66 +16,6 @@ body {
   color: var(--text);
 }
 
-.navbar {
-  background: var(--teal-dark);
-  height: 64px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 32px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-  position: relative;
-}
-
-.brand {
-  color: #fff;
-  font-weight: 700;
-  font-size: 22px;
-  letter-spacing: 0.5px;
-}
-
-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-  transition: color 0.3s ease, transform 0.3s ease;
-  position: relative;
-}
-
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition: width 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: var(--light);
-  transform: translateY(-2px);
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-
 .profile {
   width: 40px;
   height: 40px;
