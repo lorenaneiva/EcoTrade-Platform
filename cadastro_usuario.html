@@ -4,52 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <link rel="stylesheet" href="assets/css/cadastro_empresa.css">
-        <link rel="stylesheet" href="assets/css/globals.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cadastro_usuario.css">
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="first">
-        <header>
-            <nav class="navbar">
-                <a href="index.html" class="brand"> EcoTrade</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Entrar</a></li>
-                    <li><a href="registro_escolher.html">Registrar</a></li>
-                </ul>
-            </nav>
-        </header>
+
+
+    <header>
+        <nav class="navbar">
+        <a href="index.html" class="brand"> EcoTrade</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboardProdutorRural.html">DashBoard</a></li>
+            <li><a href="login.html">Entrar</a></li>
+            <li><a href="registro_escolher.html">Registrar</a></li>
+        </ul>
+    </nav>
+    </header>
 
     <section class="container-cadastro-empresa">
 
-            <div class="conteudo-formulario">
-                
+        <form onsubmit="salvarUsuario(); return false;"></form>
                 <div class="formulario">
                     <h2>Insira seus dados </h2>
+
                     <label for="floatingInput">Email </label>
-                    <input type="email" class="form-control" id="floatingInput" placeholder="usuario@gmail.com">
-            
+                    <input type="email" class="form-control" id="email" placeholder="usuario@gmail.com">
+                
                     <label for="floatingPassword">Senha</label>
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                    <input type="password" class="form-control" id="senha" placeholder="Senha">
 
                     <label for="floatingInput">Confirmar senha</label>
-                    <input type="password" class="form-control" id="floatingInput" placeholder="Comfirmar senha">
+                    <input type="password" class="form-control" id="comfirmarSenha" placeholder="Comfirmar senha">
                 
-                    <label for="floatingPassword">CNPJ</label>
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="00.000.000/0000-00">
+                    <label for="floatingPassword">CPF</label>
+                    <input type="password" class="form-control" id="cpf" placeholder="000.000.000-00">
                 
-                    <button type="submit" id="botao">Confirmar</button>
+                    <button type="submit" id="botao_cadastro">Confirmar</button>
+
+                </form>
                 </div>
-
-
-            </div>
-        
-
     </section>
-</section>
+
 
 <footer class="footer">
     <div class="footer-content">
@@ -84,6 +83,7 @@
     </div>
     </footer>
 
+<script src="assets/js/cadastro.js"></script>
 
 </body>
 </html>

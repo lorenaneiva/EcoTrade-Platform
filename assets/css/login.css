@@ -1,18 +1,8 @@
-.first{
-    background-image: white;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-position: center;
-    color: white;
-    height: 100vh;
-}
-
 .container-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #e8f8f5;
     height: 700px;
 }
 
@@ -30,11 +20,20 @@
 }
 
 .formulario {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px  #1b363c7c;
-    width: 350px;
+    max-width: 500px;
+    width: 90%;
+    background-color: #ffffff;
+    padding: 40px 48px 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    margin: 60px auto;
+    animation: fadeIn 0.6s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.2);
 }
 
 .formulario label {

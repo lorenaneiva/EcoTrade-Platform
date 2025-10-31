@@ -1,50 +1,25 @@
-.first{
-    background-image: white;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-position: center;
-    color: white;
-    height: 100vh;
-}
-
-.imagem-lateral img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-h1{
-    color: black;
-    font-family: ADLaM Display;
-}
-
-button{
-    background-color: #CAF0F8;
-    color: black;
-    width: 140px;
-    height: 50px;
-    font-family: Helvetica;
+body{
+    background-color: #e8f8f5;
 }
 
 .container-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    height: 800px;
+    width: 100%;
 }
 
 .conteudo{
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
+    gap: 200px;
 }
 
 .imagem-lateral img{
-    width: 250px;
+    width: 450px;
     height: auto;
 }
 
@@ -60,25 +35,53 @@ button{
 }
 
 .botoes {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.separador-botao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botao-texto-informativo{
+    font-size: larger;
+    padding: 30px;
+    width: 700px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.botao-texto-informativo:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .botao-link{
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 25px;
   border: none;
   background-color: #CAF0F8;
   color: black;
-  border-radius: 30px;
-  transition: 0.1s;
+  transition: 0.5s;
   cursor: pointer;
   box-shadow: 0 0 6px  #1b363c7c;
+  border-radius: 6px;
 }
 
 .botao-link:hover{
-    background-color: #46b5cb;
-    cursor: pointer;
+    background-color: #1b363c;
+    color: white;
 }
 
 .botao-link:active{
@@ -91,6 +94,7 @@ button{
     color: black;
     text-decoration: none;
 }
+
 
 @media (max-width: 768px) {
   .conteudo {
