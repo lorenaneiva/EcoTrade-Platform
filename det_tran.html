@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrade - Detalhes da Transação</title>
+    <link rel="stylesheet" href="assets/css/det_tran.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="brand"> EcoTrade</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboardProdutorRural.html">DashBoard</a></li>
+                <li><a href="login.html">Entrar</a></li>
+                <li><a href="registro_escolher.html">Registrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="transaction-container">
+
+    <div class="transaction-container">
+        <div class="transaction-header">
+            <h1>Resumo da Transação</h1>
+            <p class="transaction-id">ID: #TRX-2023-78945</p>
+        </div>
+
+        <main class="transaction-content">
+            <div class="transaction-cards">
+                <section class="card transaction-details-card">
+                    <h3><i class="fas fa-info-circle"></i> DETALHES DA TRANSAÇÃO</h3>
+                    <div class="transaction-info">
+                        <div class="info-item">
+                            <label>Tipo:</label>
+                            <span class="info-value transaction-type">Compra de Créditos</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Data:</label>
+                            <span class="info-value">15/03/2023</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Status:</label>
+                            <span class="status-badge pending">Pendente</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Quantidade:</label>
+                            <span class="info-value">150 Créditos de Carbono</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card parties-card">
+                    <h3><i class="fas fa-users"></i> PARTES ENVOLVIDAS</h3>
+                    <div class="parties-info">
+                        <div class="party-section">
+                            <h4>Vendedor</h4>
+                            <div class="party-details">
+                                <div class="party-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="party-info">
+                                    <p class="party-name">EcoSolutions Ltda</p>
+                                    <p class="party-contact">contato@ecosolutions.com</p>
+                                    <p class="party-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        (4.5)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="divider">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        
+                        <div class="party-section">
+                            <h4>Comprador</h4>
+                            <div class="party-details">
+                                <div class="party-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="party-info">
+                                    <p class="party-name">Bruno Silva</p>
+                                    <p class="party-contact">bruno@gmail.com</p>
+                                    <p class="party-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        (4.0)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="card summary-card">
+                <h3><i class="fas fa-file-invoice-dollar"></i> RESUMO FINANCEIRO</h3>
+                <div class="summary-details">
+                    <div class="summary-item">
+                        <label>Valor dos Créditos:</label>
+                        <span class="summary-value">R$ 7.500,00</span>
+                    </div>
+                    <div class="summary-item">
+                        <label>Taxa da Plataforma:</label>
+                        <span class="summary-value">R$ 375,00</span>
+                    </div>
+                    <div class="summary-item">
+                        <label>Taxa de Processamento:</label>
+                        <span class="summary-value">R$ 45,00</span>
+                    </div>
+                    <div class="summary-item total">
+                        <label>Valor Total:</label>
+                        <span class="summary-value total-amount">R$ 7.920,00</span>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <h4>Método de Pagamento</h4>
+                    <div class="payment-details">
+                        <i class="fab fa-cc-visa"></i>
+                        <div class="payment-info">
+                            <p>Cartão Visa terminado em 4512</p>
+                            <p class="payment-note">Pagamento aprovado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="perfil_usr.html" class="btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Voltar ao Perfil
+                    </a>
+                    <button class="btn-primary confirm-btn">
+                        <i class="fas fa-check-circle"></i> Confirmar Transação
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column brand-info">
+                <h3>EcoTrade</h3>
+                <p>Plataforma para negociação e registro de Créditos de Carbono.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-info">
+                <h3>Contato</h3>
+                <p>Email: contato@ecotrade.com</p>
+                <p>Telefone: (99) 9999-9999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 EcoTrade. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.confirm-btn').addEventListener('click', function() {
+            if(confirm('Tem certeza que deseja confirmar esta transação? Esta ação não pode ser desfeita.')) {
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processando...';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    alert('Transação confirmada com sucesso!');
+                    window.location.href = 'perfil_usuario.html';
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+</html>
