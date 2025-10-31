@@ -3,15 +3,15 @@ sr.reveal('.footer-content', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })
-sr.reveal('.maincontent', {
+sr.reveal('.transaction-cards', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })
-sr.reveal('.carousel', {
+sr.reveal('#test', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })
-sr.reveal('.titlesecond', {
+sr.reveal('.transaction-header', {
     duration: 2000,
     rotate: {x: 30, y: 0, z:0}
 })
